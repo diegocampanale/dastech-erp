@@ -16,16 +16,16 @@ const servizi = [
 const referenze = ["Logistica Sud", "Oleificio Ventura", "Frigomar", "Comune di Giovinazzo", "Retail Park Puglia", "Caseificio Murgia"];
 
 const team = [
-  { foto: "/img/team3.jpg", nome: "Michele Abbate", ruolo: "Titolare e direttore lavori", nota: "Fondatore, 30 anni di cantieri alle spalle." },
-  { foto: "/img/team1.jpg", nome: "Paolo Ranieri", ruolo: "Direttore tecnico", nota: "Progettazione impianti e sicurezza." },
-  { foto: "/img/team2.jpg", nome: "Angela Fiore", ruolo: "Amministrazione", nota: "Commesse, acquisti e fornitori." },
-  { foto: "/img/team4.jpg", nome: "Dario Colangelo", ruolo: "Responsabile commesse", nota: "Pianificazione squadre e mezzi." },
+  { foto: "img/team3.jpg", nome: "Michele Abbate", ruolo: "Titolare e direttore lavori", nota: "Fondatore, 30 anni di cantieri alle spalle." },
+  { foto: "img/team1.jpg", nome: "Paolo Ranieri", ruolo: "Direttore tecnico", nota: "Progettazione impianti e sicurezza." },
+  { foto: "img/team2.jpg", nome: "Angela Fiore", ruolo: "Amministrazione", nota: "Commesse, acquisti e fornitori." },
+  { foto: "img/team4.jpg", nome: "Dario Colangelo", ruolo: "Responsabile commesse", nota: "Pianificazione squadre e mezzi." },
 ];
 
 const cantieriFoto = [
-  { src: "/img/cantiere1.jpg", didascalia: "Posa cavidotti — capannone logistico" },
-  { src: "/img/cantiere2.jpg", didascalia: "Coordinamento squadre in cantiere" },
-  { src: "/img/cantiere3.jpg", didascalia: "Progettazione e verifica schemi" },
+  { src: "img/cantiere1.jpg", didascalia: "Posa cavidotti — capannone logistico" },
+  { src: "img/cantiere2.jpg", didascalia: "Coordinamento squadre in cantiere" },
+  { src: "img/cantiere3.jpg", didascalia: "Progettazione e verifica schemi" },
 ];
 
 export default function Landing() {
@@ -55,7 +55,7 @@ export default function Landing() {
       {/* hero */}
       <section
         className="relative bg-petrol-950 bg-cover bg-center text-white"
-        style={{ backgroundImage: "url(/img/hero.jpg)" }}
+        style={{ backgroundImage: "url(img/hero.jpg)" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-petrol-950/95 via-petrol-950/80 to-petrol-900/40" />
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
@@ -92,7 +92,7 @@ export default function Landing() {
             </p>
           </div>
           <div>
-            <img src="/img/chisiamo.jpg" alt="Tecnica al lavoro su quadri e cablaggi" className="aspect-[3/2] w-full rounded-2xl object-cover shadow-lg" />
+            <img src="img/chisiamo.jpg" alt="Tecnica al lavoro su quadri e cablaggi" className="aspect-[3/2] w-full rounded-2xl object-cover shadow-lg" />
             <div className="mt-4 grid grid-cols-3 gap-4">
               {[["25+", "anni di attività"], ["120+", "commesse concluse"], ["15", "tecnici e operai"]].map(([n, l]) => (
                 <div key={l} className="rounded-xl bg-slate-50 p-5 text-center">
