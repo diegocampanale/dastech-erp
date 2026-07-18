@@ -13,14 +13,12 @@ export type Dipendente = {
 };
 
 export const dipendenti: Dipendente[] = [
-  { id: "D01", nome: "Vito Lorusso", ruolo: "Capo cantiere", tipo: "Dipendente", telefono: "340 112 2334", commessaId: "C01", oreMese: 168, costoOrario: 28 },
-  { id: "D02", nome: "Nicola Ranieri", ruolo: "Elettricista specializzato", tipo: "Dipendente", telefono: "347 998 1120", commessaId: "C01", oreMese: 160, costoOrario: 24 },
-  { id: "D03", nome: "Marco De Santis", ruolo: "Elettricista", tipo: "Dipendente", telefono: "329 445 6671", commessaId: "C02", oreMese: 152, costoOrario: 21 },
-  { id: "D04", nome: "Sabino Carbonara", ruolo: "Elettricista", tipo: "Interinale", agenzia: "Adecco", telefono: "331 220 8745", commessaId: "C02", oreMese: 144, costoOrario: 23 },
-  { id: "D05", nome: "Angela Fiore", ruolo: "Impiegata tecnica", tipo: "Dipendente", telefono: "080 556 7789", commessaId: null, oreMese: 160, costoOrario: 20 },
-  { id: "D06", nome: "Giuseppe Larato", ruolo: "Aiuto elettricista", tipo: "Interinale", agenzia: "Randstad", telefono: "338 761 0092", commessaId: "C03", oreMese: 136, costoOrario: 19 },
-  { id: "D07", nome: "Francesco Mastro", ruolo: "Capo squadra", tipo: "Dipendente", telefono: "345 003 8821", commessaId: "C04", oreMese: 168, costoOrario: 26 },
-  { id: "D08", nome: "Luca Petruzzelli", ruolo: "Elettricista", tipo: "Dipendente", telefono: "342 887 4410", commessaId: "C05", oreMese: 120, costoOrario: 21 },
+  { id: "D01", nome: "Stefano Campanale", ruolo: "Capo cantiere", tipo: "Dipendente", telefono: "340 112 2334", commessaId: "C01", oreMese: 168, costoOrario: 28 },
+  { id: "D02", nome: "Daniele Campanale", ruolo: "Elettricista specializzato", tipo: "Dipendente", telefono: "347 998 1120", commessaId: "C01", oreMese: 160, costoOrario: 24 },
+  { id: "D03", nome: "Gianni Campanale", ruolo: "Elettricista", tipo: "Dipendente", telefono: "329 445 6671", commessaId: "C02", oreMese: 152, costoOrario: 21 },
+  { id: "D06", nome: "Nicola", ruolo: "Aiuto elettricista", tipo: "Interinale", agenzia: "Randstad", telefono: "338 761 0092", commessaId: "C03", oreMese: 136, costoOrario: 19 },
+  { id: "D07", nome: "Antonio Campanale", ruolo: "Capo squadra", tipo: "Dipendente", telefono: "345 003 8821", commessaId: "C04", oreMese: 168, costoOrario: 26 },
+  { id: "D08", nome: "Giacomo Campanale", ruolo: "Elettricista", tipo: "Dipendente", telefono: "342 887 4410", commessaId: "C05", oreMese: 120, costoOrario: 21 },
 ];
 
 export type Commessa = {
@@ -81,12 +79,12 @@ export type Mezzo = {
 };
 
 export const mezzi: Mezzo[] = [
-  { id: "M01", nome: "Fiat Ducato furgone attrezzato", targa: "GF 342 KL", tipo: "Furgone", commessaId: "C01", assegnatario: "Vito Lorusso", stato: "Operativo" },
-  { id: "M02", nome: "Iveco Daily con gru", targa: "FT 889 CV", tipo: "Autocarro", commessaId: "C03", assegnatario: "Francesco Mastro", stato: "Operativo" },
-  { id: "M03", nome: "Piaggio Porter", targa: "EX 120 RA", tipo: "Motocarro", commessaId: "C04", assegnatario: "Marco De Santis", stato: "Operativo" },
+  { id: "M01", nome: "Fiat Ducato furgone attrezzato", targa: "GF 342 KL", tipo: "Furgone", commessaId: "C01", assegnatario: "Stefano Campanale", stato: "Operativo" },
+  { id: "M02", nome: "Iveco Daily con gru", targa: "FT 889 CV", tipo: "Autocarro", commessaId: "C03", assegnatario: "Antonio Campanale", stato: "Operativo" },
+  { id: "M03", nome: "Piaggio Porter", targa: "EX 120 RA", tipo: "Motocarro", commessaId: "C04", assegnatario: "Gianni Campanale", stato: "Operativo" },
   { id: "M04", nome: "Fiat Panda Van", targa: "GH 771 PS", tipo: "Auto di servizio", commessaId: null, assegnatario: "Sede", stato: "Operativo" },
-  { id: "M05", nome: "Piattaforma aerea 18 m", targa: "FC 456 TT", tipo: "PLE", commessaId: "C04", assegnatario: "Francesco Mastro", stato: "In officina" },
-  { id: "M06", nome: "Renault Trafic", targa: "GK 903 BD", tipo: "Furgone", commessaId: "C02", assegnatario: "Nicola Ranieri", stato: "Operativo" },
+  { id: "M05", nome: "Piattaforma aerea 18 m", targa: "FC 456 TT", tipo: "PLE", commessaId: "C04", assegnatario: "Antonio Campanale", stato: "In officina" },
+  { id: "M06", nome: "Renault Trafic", targa: "GK 903 BD", tipo: "Furgone", commessaId: "C02", assegnatario: "Daniele Campanale", stato: "Operativo" },
 ];
 
 export type Articolo = {
@@ -113,11 +111,11 @@ export const articoli: Articolo[] = [
   { id: "A09", nome: "Plafoniera stagna LED 150 cm", categoria: "Materiale", giacenza: 48, unita: "pz", posizione: "Cantiere Bitonto", costoUnitario: 22.5 },
   { id: "A10", nome: "Pannello fotovoltaico 450W", categoria: "Materiale", giacenza: 130, unita: "pz", posizione: "Cantiere Molfetta", costoUnitario: 148.0 },
   { id: "A11", nome: "Inverter trifase 50 kW", categoria: "Materiale", giacenza: 2, unita: "pz", posizione: "Magazzino — area sicura", costoUnitario: 3900.0 },
-  { id: "A12", nome: "Trapano tassellatore Hilti TE 30", categoria: "Attrezzo", giacenza: 3, unita: "pz", posizione: "In uso", assegnatario: "Nicola Ranieri", costoUnitario: 0 },
+  { id: "A12", nome: "Trapano tassellatore Hilti TE 30", categoria: "Attrezzo", giacenza: 3, unita: "pz", posizione: "In uso", assegnatario: "Daniele Campanale", costoUnitario: 0 },
   { id: "A13", nome: "Avvitatore Makita 18V", categoria: "Attrezzo", giacenza: 6, unita: "pz", posizione: "In uso", assegnatario: "Squadra Modugno", costoUnitario: 0 },
-  { id: "A14", nome: "Pinza amperometrica Fluke 376", categoria: "Attrezzo", giacenza: 2, unita: "pz", posizione: "In uso", assegnatario: "Vito Lorusso", costoUnitario: 0 },
+  { id: "A14", nome: "Pinza amperometrica Fluke 376", categoria: "Attrezzo", giacenza: 2, unita: "pz", posizione: "In uso", assegnatario: "Stefano Campanale", costoUnitario: 0 },
   { id: "A15", nome: "Strumento verifica impianti Fluke 1664", categoria: "Attrezzo", giacenza: 1, unita: "pz", posizione: "Magazzino — armadio strumenti", costoUnitario: 0 },
-  { id: "A16", nome: "Scala telescopica 8 gradini", categoria: "Attrezzo", giacenza: 4, unita: "pz", posizione: "Cantiere Giovinazzo", assegnatario: "Marco De Santis", costoUnitario: 0 },
+  { id: "A16", nome: "Scala telescopica 8 gradini", categoria: "Attrezzo", giacenza: 4, unita: "pz", posizione: "Cantiere Giovinazzo", assegnatario: "Gianni Campanale", costoUnitario: 0 },
   { id: "A17", nome: "Trabattello alluminio h4m", categoria: "Attrezzo", giacenza: 2, unita: "pz", posizione: "Cantiere Bitonto", costoUnitario: 0 },
   { id: "A18", nome: "Piattaforma verticale 10 m", categoria: "Noleggio", giacenza: 1, unita: "pz", posizione: "Cantiere Modugno", fornitore: "Mollo Noleggio", costoUnitario: 95 },
   { id: "A19", nome: "Escavatore mini 2,5 t", categoria: "Noleggio", giacenza: 1, unita: "pz", posizione: "Cantiere Molfetta", fornitore: "Venpa", costoUnitario: 140 },
@@ -135,12 +133,12 @@ export type Movimento = {
 };
 
 export const movimenti: Movimento[] = [
-  { id: "MV01", data: "2026-07-17", tipo: "Scarico", articolo: "Cavo FG16OR16 3x2,5 mmq", quantita: "250 m", commessa: "Capannone Modugno", operatore: "Vito Lorusso" },
-  { id: "MV02", data: "2026-07-17", tipo: "Scarico", articolo: "Faretto LED incasso 12W", quantita: "40 pz", commessa: "Quadri Bitonto", operatore: "Marco De Santis" },
+  { id: "MV01", data: "2026-07-17", tipo: "Scarico", articolo: "Cavo FG16OR16 3x2,5 mmq", quantita: "250 m", commessa: "Capannone Modugno", operatore: "Stefano Campanale" },
+  { id: "MV02", data: "2026-07-17", tipo: "Scarico", articolo: "Faretto LED incasso 12W", quantita: "40 pz", commessa: "Quadri Bitonto", operatore: "Gianni Campanale" },
   { id: "MV03", data: "2026-07-16", tipo: "Carico", articolo: "Pannello fotovoltaico 450W", quantita: "60 pz", commessa: "Fotovoltaico Molfetta", operatore: "Angela Fiore" },
-  { id: "MV04", data: "2026-07-15", tipo: "Scarico", articolo: "Canala metallica 200x60", quantita: "20 barre", commessa: "Capannone Modugno", operatore: "Nicola Ranieri" },
+  { id: "MV04", data: "2026-07-15", tipo: "Scarico", articolo: "Canala metallica 200x60", quantita: "20 barre", commessa: "Capannone Modugno", operatore: "Daniele Campanale" },
   { id: "MV05", data: "2026-07-14", tipo: "Carico", articolo: "Interruttore magnetotermico 16A", quantita: "50 pz", commessa: "Magazzino", operatore: "Angela Fiore" },
-  { id: "MV06", data: "2026-07-12", tipo: "Scarico", articolo: "Plafoniera stagna LED 150 cm", quantita: "24 pz", commessa: "Quadri Bitonto", operatore: "Sabino Carbonara" },
+  { id: "MV06", data: "2026-07-12", tipo: "Scarico", articolo: "Plafoniera stagna LED 150 cm", quantita: "24 pz", commessa: "Quadri Bitonto", operatore: "Gianni Campanale" },
 ];
 
 export type Scadenza = {
@@ -153,11 +151,11 @@ export type Scadenza = {
 };
 
 export const scadenze: Scadenza[] = [
-  { id: "S01", soggetto: "Vito Lorusso", tipoSoggetto: "Persona", documento: "Corso PES/PAV/PEI", scadenza: "2026-07-25", stato: "in scadenza" },
-  { id: "S02", soggetto: "Nicola Ranieri", tipoSoggetto: "Persona", documento: "Visita medica idoneità", scadenza: "2026-07-10", stato: "scaduto" },
-  { id: "S03", soggetto: "Marco De Santis", tipoSoggetto: "Persona", documento: "Corso lavori in quota", scadenza: "2026-09-18", stato: "ok" },
-  { id: "S04", soggetto: "Giuseppe Larato", tipoSoggetto: "Persona", documento: "Formazione base sicurezza", scadenza: "2026-08-02", stato: "in scadenza" },
-  { id: "S05", soggetto: "Francesco Mastro", tipoSoggetto: "Persona", documento: "Patentino PLE", scadenza: "2027-01-12", stato: "ok" },
+  { id: "S01", soggetto: "Stefano Campanale", tipoSoggetto: "Persona", documento: "Corso PES/PAV/PEI", scadenza: "2026-07-25", stato: "in scadenza" },
+  { id: "S02", soggetto: "Daniele Campanale", tipoSoggetto: "Persona", documento: "Visita medica idoneità", scadenza: "2026-07-10", stato: "scaduto" },
+  { id: "S03", soggetto: "Gianni Campanale", tipoSoggetto: "Persona", documento: "Corso lavori in quota", scadenza: "2026-09-18", stato: "ok" },
+  { id: "S04", soggetto: "Nicola", tipoSoggetto: "Persona", documento: "Formazione base sicurezza", scadenza: "2026-08-02", stato: "in scadenza" },
+  { id: "S05", soggetto: "Antonio Campanale", tipoSoggetto: "Persona", documento: "Patentino PLE", scadenza: "2027-01-12", stato: "ok" },
   { id: "S06", soggetto: "Fiat Ducato — GF 342 KL", tipoSoggetto: "Mezzo", documento: "Revisione", scadenza: "2026-08-05", stato: "in scadenza" },
   { id: "S07", soggetto: "Iveco Daily — FT 889 CV", tipoSoggetto: "Mezzo", documento: "Verifica gru (D.Lgs 81)", scadenza: "2026-06-30", stato: "scaduto" },
   { id: "S08", soggetto: "Piattaforma aerea — FC 456 TT", tipoSoggetto: "Mezzo", documento: "Verifica periodica INAIL", scadenza: "2026-10-22", stato: "ok" },
@@ -175,10 +173,10 @@ export type Trasferta = {
 };
 
 export const trasferte: Trasferta[] = [
-  { id: "T01", dipendente: "Francesco Mastro", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 620 },
-  { id: "T02", dipendente: "Giuseppe Larato", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 540 },
-  { id: "T03", dipendente: "Vito Lorusso", commessaId: "C01", destinazione: "Modugno (BA)", dal: "2026-06-22", al: "2026-06-26", costo: 480 },
-  { id: "T04", dipendente: "Luca Petruzzelli", commessaId: "C05", destinazione: "Casamassima (BA)", dal: "2026-07-13", al: "2026-07-15", costo: 310 },
+  { id: "T01", dipendente: "Antonio Campanale", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 620 },
+  { id: "T02", dipendente: "Nicola", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 540 },
+  { id: "T03", dipendente: "Stefano Campanale", commessaId: "C01", destinazione: "Modugno (BA)", dal: "2026-06-22", al: "2026-06-26", costo: 480 },
+  { id: "T04", dipendente: "Giacomo Campanale", commessaId: "C05", destinazione: "Casamassima (BA)", dal: "2026-07-13", al: "2026-07-15", costo: 310 },
 ];
 
 export type RichiestaMateriale = {
@@ -194,7 +192,7 @@ export type RichiestaMateriale = {
 
 export const richiesteMateriale: RichiestaMateriale[] = [
   {
-    id: "R01", canale: "Scheda cartacea", richiedente: "Vito Lorusso", commessaId: "C01", data: "2026-07-17",
+    id: "R01", canale: "Scheda cartacea", richiedente: "Stefano Campanale", commessaId: "C01", data: "2026-07-17",
     righe: [
       { articolo: "Cavo FG16OR16 3x2,5 mmq", quantita: "300 m" },
       { articolo: "Canala metallica 200x60", quantita: "15 barre" },
@@ -203,7 +201,7 @@ export const richiesteMateriale: RichiestaMateriale[] = [
     affidabilita: 94,
   },
   {
-    id: "R02", canale: "Messaggio vocale", richiedente: "Francesco Mastro", commessaId: "C03", data: "2026-07-17",
+    id: "R02", canale: "Messaggio vocale", richiedente: "Antonio Campanale", commessaId: "C03", data: "2026-07-17",
     trascrizione: "\"Angela, per Molfetta mi servono altri venti pannelli, due bobine di solare da sei e una cassetta di MC4, se puoi ordinarli per lunedì.\"",
     righe: [
       { articolo: "Pannello fotovoltaico 450W", quantita: "20 pz" },
@@ -213,7 +211,7 @@ export const richiesteMateriale: RichiestaMateriale[] = [
     affidabilita: 81,
   },
   {
-    id: "R03", canale: "Scheda cartacea", richiedente: "Marco De Santis", commessaId: "C02", data: "2026-07-16",
+    id: "R03", canale: "Scheda cartacea", richiedente: "Gianni Campanale", commessaId: "C02", data: "2026-07-16",
     righe: [
       { articolo: "Plafoniera stagna LED 150 cm", quantita: "30 pz" },
       { articolo: "Tubo corrugato Ø25", quantita: "200 m" },
@@ -221,7 +219,7 @@ export const richiesteMateriale: RichiestaMateriale[] = [
     affidabilita: 88,
   },
   {
-    id: "R04", canale: "Messaggio vocale", richiedente: "Luca Petruzzelli", commessaId: "C05", data: "2026-07-16",
+    id: "R04", canale: "Messaggio vocale", richiedente: "Giacomo Campanale", commessaId: "C05", data: "2026-07-16",
     trascrizione: "\"Per la cabina di Casamassima servono i terminali per il 185 e una decina di guanti isolanti taglia nove, grazie.\"",
     righe: [
       { articolo: "Terminali MT per cavo 185 mmq", quantita: "6 pz" },

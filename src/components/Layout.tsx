@@ -62,7 +62,7 @@ export default function Layout() {
           <Zap size={20} />
         </div>
         <div>
-          <div className="text-sm font-bold leading-tight">Elettra Impianti</div>
+          <div className="text-sm font-bold leading-tight">Dastech Implant</div>
           <div className="text-xs text-petrol-300">Gestionale cantieri</div>
         </div>
       </div>

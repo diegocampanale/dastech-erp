@@ -9,13 +9,13 @@ import { useToast } from "../components/ui";
 
 // Utente simulato: operaio con accessi limitati (solo i propri dati)
 const io = {
-  nome: "Luca Petruzzelli",
+  nome: "Giacomo Campanale",
   ruolo: "Elettricista",
-  matricola: "EI-0108",
+  matricola: "DT-0108",
   assunto: "2019-04-15",
   anzianita: "7 anni e 3 mesi",
   commessa: "Cabina MT/BT centro commerciale Casamassima",
-  capoSquadra: "Francesco Mastro",
+  capoSquadra: "Antonio Campanale",
   oreMese: 120,
   oreStraordinario: 6,
   ferieResidue: 12.5,
@@ -63,12 +63,12 @@ export default function PortaleDipendente() {
           <div className="mb-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-petrol-600"><Zap size={16} /></div>
-              <span className="text-sm font-semibold">Elettra Impianti · Portale dipendente</span>
+              <span className="text-sm font-semibold">Dastech Implant · Portale dipendente</span>
             </div>
             <Link to="/" className="text-petrol-300 hover:text-white" title="Esci"><ArrowLeft size={18} /></Link>
           </div>
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-petrol-600 text-lg font-bold">LP</div>
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-petrol-600 text-lg font-bold">GC</div>
             <div>
               <div className="font-semibold">{io.nome}</div>
               <div className="text-xs text-petrol-300">{io.ruolo} · matricola {io.matricola}</div>

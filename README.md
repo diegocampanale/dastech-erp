@@ -1,4 +1,4 @@
-# Elettra Impianti — Prototipo gestionale
+# Dastech Implant — Prototipo gestionale
 
 Prototipo **solo front-end** (nessun backend, dati mock in memoria) di un gestionale per un'impresa di impianti elettrici. Serve come demo cliccabile per il cliente.
 

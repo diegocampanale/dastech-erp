@@ -37,7 +37,7 @@ export default function Landing() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-petrol-600 text-white"><Zap size={20} /></div>
-            <span className="text-lg font-bold text-slate-900">Elettra Impianti <span className="font-normal text-slate-400">Srl</span></span>
+            <span className="text-lg font-bold text-slate-900">Dastech Implant <span className="font-normal text-slate-400">Srl</span></span>
           </div>
           <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 md:flex">
             <a href="#chi-siamo" className="hover:text-petrol-600">Chi siamo</a>
@@ -83,7 +83,7 @@ export default function Landing() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900">Chi siamo</h2>
             <p className="mt-4 text-slate-600">
-              Elettra Impianti è un'impresa di installazione elettrica con sede a Bari. Da oltre 25 anni affianchiamo aziende,
+              Dastech Implant è un'impresa di installazione elettrica con sede a Bari. Da oltre 25 anni affianchiamo aziende,
               enti pubblici e privati nella realizzazione e manutenzione di impianti sicuri, efficienti e a norma.
             </p>
             <p className="mt-3 text-slate-600">
@@ -178,7 +178,7 @@ export default function Landing() {
             <ul className="mt-6 space-y-3 text-sm text-petrol-100">
               <li className="flex items-center gap-3"><MapPin size={17} className="text-petrol-300" /> Via dell'Artigianato 42, Zona Ind.le — 70123 Bari</li>
               <li className="flex items-center gap-3"><Phone size={17} className="text-petrol-300" /> 080 000 0000</li>
-              <li className="flex items-center gap-3"><Mail size={17} className="text-petrol-300" /> info@elettraimpianti.example</li>
+              <li className="flex items-center gap-3"><Mail size={17} className="text-petrol-300" /> info@dastechimplant.example</li>
             </ul>
           </div>
           <form
@@ -197,7 +197,7 @@ export default function Landing() {
       </section>
 
       <footer className="border-t border-petrol-900 bg-petrol-950 py-6 text-center text-xs text-petrol-400">
-        © 2026 Elettra Impianti Srl — Azienda fittizia a scopo dimostrativo · P.IVA 00000000000
+        © 2026 Dastech Implant Srl — Azienda fittizia a scopo dimostrativo · P.IVA 00000000000
       </footer>
     </div>
   );

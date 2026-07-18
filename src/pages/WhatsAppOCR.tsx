@@ -14,7 +14,7 @@ type MsgWA = {
 
 const messaggi: MsgWA[] = [
   {
-    id: "W01", mittente: "Vito Lorusso", telefono: "+39 340 112 2334", ora: "Oggi 07:42",
+    id: "W01", mittente: "Stefano Campanale", telefono: "+39 340 112 2334", ora: "Oggi 07:42",
     commessa: "Capannone Modugno", fase: "In validazione",
     fotoNota: ["cavo 3x2,5 → 300 mt", "canala 200 n.15 barre", "magnetot. 16A x12", "fascette lunghe 2 buste"],
     estratte: [
@@ -25,7 +25,7 @@ const messaggi: MsgWA[] = [
     ],
   },
   {
-    id: "W02", mittente: "Francesco Mastro", telefono: "+39 345 003 8821", ora: "Oggi 06:58",
+    id: "W02", mittente: "Antonio Campanale", telefono: "+39 345 003 8821", ora: "Oggi 06:58",
     commessa: "Fotovoltaico Molfetta", fase: "OCR completato",
     fotoNota: ["pannelli 450 → 20 pz", "cavo solare 6mmq 2 bobine", "MC4 1 cassetta"],
     estratte: [
@@ -35,7 +35,7 @@ const messaggi: MsgWA[] = [
     ],
   },
   {
-    id: "W03", mittente: "Luca Petruzzelli", telefono: "+39 342 887 4410", ora: "Ieri 17:21",
+    id: "W03", mittente: "Giacomo Campanale", telefono: "+39 342 887 4410", ora: "Ieri 17:21",
     commessa: "Cabina Casamassima", fase: "Ricevuto",
     fotoNota: ["terminali 185 x6", "guanti isolanti tg 9 — 10 paia", "nastro autoagglom. 5 rot."],
     estratte: [],

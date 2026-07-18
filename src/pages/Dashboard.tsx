@@ -5,7 +5,7 @@ import { Card, PageTitle } from "../components/ui";
 
 const stats = [
   { label: "Commesse attive", value: String(commesse.length), sub: "di cui 1 in avvio", icon: FolderKanban, color: "bg-petrol-100 text-petrol-700" },
-  { label: "Personale in cantiere oggi", value: String(dipendenti.filter((d) => d.commessaId).length), sub: "su 8 in organico", icon: HardHat, color: "bg-emerald-100 text-emerald-700" },
+  { label: "Personale in cantiere oggi", value: String(dipendenti.filter((d) => d.commessaId).length), sub: "su 6 in organico", icon: HardHat, color: "bg-emerald-100 text-emerald-700" },
   { label: "Scadenze imminenti", value: String(scadenze.filter((s) => s.stato !== "ok").length), sub: "2 già scadute", icon: CalendarClock, color: "bg-amber-100 text-amber-700" },
   { label: "Costo commesse in corso", value: euro(commesse.reduce((a, c) => a + totaleCommessa(c), 0)), sub: "consuntivo a oggi", icon: Euro, color: "bg-violet-100 text-violet-700" },
 ];
