@@ -17,6 +17,7 @@ import Assistente from "./pages/Assistente";
 import MappaMagazzino from "./pages/MappaMagazzino";
 import PortaleDipendente from "./pages/PortaleDipendente";
 import AdminRuoli from "./pages/AdminRuoli";
+import MagazzinoQR from "./pages/MagazzinoQR";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="assistente" element={<Assistente />} />
             <Route path="mappa-magazzino" element={<MappaMagazzino />} />
             <Route path="admin" element={<AdminRuoli />} />
+            <Route path="qr" element={<MagazzinoQR />} />
           </Route>
         </Routes>
       </HashRouter>

@@ -3,7 +3,7 @@ import { NavLink, Outlet, Link } from "react-router-dom";
 import {
   LayoutDashboard, FolderKanban, Users, Package, Inbox, CalendarClock,
   Library, TrendingDown, Zap, Menu, X, ChevronDown, Globe,
-  MessageCircle, Brain, Bot, Map, ShieldCheck, Smartphone,
+  MessageCircle, Brain, Bot, Map, ShieldCheck, Smartphone, QrCode,
 } from "lucide-react";
 import { AnteprimaBadge } from "./ui";
 
@@ -26,6 +26,7 @@ const navFase3 = [
   { to: "/app/previsioni", label: "Previsioni AI", icon: Brain },
   { to: "/app/assistente", label: "Assistente AI", icon: Bot },
   { to: "/app/mappa-magazzino", label: "Mappa magazzino", icon: Map },
+  { to: "/app/qr", label: "Magazzino QR", icon: QrCode },
   { to: "/app/admin", label: "Ruoli & permessi", icon: ShieldCheck },
 ];
 
