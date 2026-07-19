@@ -18,6 +18,10 @@ import MappaMagazzino from "./pages/MappaMagazzino";
 import PortaleDipendente from "./pages/PortaleDipendente";
 import AdminRuoli from "./pages/AdminRuoli";
 import MagazzinoQR from "./pages/MagazzinoQR";
+import Login from "./pages/Login";
+import Calendario from "./pages/Calendario";
+import Fatture from "./pages/Fatture";
+import Anagrafiche from "./pages/Anagrafiche";
 
 export default function App() {
   return (
@@ -25,12 +29,16 @@ export default function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/dipendente" element={<PortaleDipendente />} />
           <Route path="/app" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="commesse" element={<Commesse />} />
             <Route path="commesse/:id" element={<CommessaDettaglio />} />
             <Route path="risorse" element={<Risorse />} />
+            <Route path="calendario" element={<Calendario />} />
+            <Route path="fatture" element={<Fatture />} />
+            <Route path="anagrafiche" element={<Anagrafiche />} />
             <Route path="magazzino" element={<Magazzino />} />
             <Route path="richieste" element={<Richieste />} />
             <Route path="scadenzario" element={<Scadenzario />} />

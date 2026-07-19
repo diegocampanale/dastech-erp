@@ -4,6 +4,7 @@ import {
   LayoutDashboard, FolderKanban, Users, Package, Inbox, CalendarClock,
   Library, TrendingDown, Zap, Menu, X, ChevronDown, Globe,
   MessageCircle, Brain, Bot, Map, ShieldCheck, Smartphone, QrCode,
+  CalendarDays, Receipt, BookUser,
 } from "lucide-react";
 import { AnteprimaBadge } from "./ui";
 
@@ -11,8 +12,11 @@ const nav = [
   { to: "/app", label: "Dashboard", icon: LayoutDashboard, end: true },
   { to: "/app/commesse", label: "Commesse", icon: FolderKanban },
   { to: "/app/risorse", label: "Risorse umane", icon: Users },
+  { to: "/app/calendario", label: "Risorse & Calendario", icon: CalendarDays },
   { to: "/app/magazzino", label: "Magazzino & attrezzi", icon: Package },
+  { to: "/app/fatture", label: "Coda fatture", icon: Receipt, count: 2 },
   { to: "/app/richieste", label: "Richieste materiale", icon: Inbox, count: 4 },
+  { to: "/app/anagrafiche", label: "Anagrafiche", icon: BookUser },
   { to: "/app/scadenzario", label: "Scadenzario", icon: CalendarClock, alert: 2 },
 ];
 

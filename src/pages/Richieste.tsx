@@ -1,4 +1,4 @@
-import { FileText, Mic, Check, Pencil } from "lucide-react";
+import { FileText, Mic, Check, Pencil, Play } from "lucide-react";
 import { richiesteMateriale, commesse } from "../mock/data";
 import { Card, PageTitle, useToast } from "../components/ui";
 
@@ -35,6 +35,21 @@ export default function Richieste() {
 
               <div className="mt-2 text-sm text-slate-500">Commessa: <span className="font-medium text-slate-700">{c?.nome}</span></div>
 
+              {r.trascrizione && (
+                <div className="mt-3 flex items-center gap-3 rounded-full bg-slate-100 px-3 py-2">
+                  <button onClick={() => toast("Riproduzione messaggio vocale (demo)")}
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-petrol-600 text-white hover:bg-petrol-700">
+                    <Play size={14} className="ml-0.5" />
+                  </button>
+                  <div className="flex h-6 flex-1 items-center gap-[3px] overflow-hidden">
+                    {Array.from({ length: 36 }).map((_, i) => (
+                      <span key={i} className="w-[3px] rounded-full bg-slate-300"
+                        style={{ height: `${25 + ((i * 37) % 70)}%` }} />
+                    ))}
+                  </div>
+                  <span className="text-xs text-slate-400">0:14</span>
+                </div>
+              )}
               {r.trascrizione && (
                 <blockquote className="mt-3 rounded-lg border-l-4 border-violet-300 bg-violet-50 px-3 py-2 text-sm italic text-slate-600">
                   {r.trascrizione}

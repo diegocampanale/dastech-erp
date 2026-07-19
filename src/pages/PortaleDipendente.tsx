@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import {
   Home, Euro, CalendarCheck, FileText, HeartHandshake, ChevronRight,
   HardHat, Clock, MapPin, Download, Thermometer, Palmtree, AlertCircle,
-  Gift, GraduationCap, Bus, Zap, ArrowLeft, CheckCircle2,
+  Gift, GraduationCap, Bus, Zap, ArrowLeft, CheckCircle2, QrCode,
 } from "lucide-react";
 import { useToast } from "../components/ui";
+import { ScannerQR } from "../components/ScannerQR";
 
 // Utente simulato: operaio con accessi limitati (solo i propri dati)
 const io = {
@@ -38,6 +39,7 @@ const welfare = [
 
 const tabs = [
   { id: "home", label: "Home", icon: Home },
+  { id: "scan", label: "Scan", icon: QrCode },
   { id: "paghe", label: "Paghe", icon: Euro },
   { id: "presenze", label: "Presenze", icon: CalendarCheck },
   { id: "richieste", label: "Richieste", icon: FileText },
@@ -115,6 +117,16 @@ export default function PortaleDipendente() {
               <p className="px-2 text-center text-xs text-slate-400">
                 Vedi solo i tuoi dati. Gli accessi sono decisi dall'azienda in base al ruolo.
               </p>
+            </div>
+          )}
+
+          {tab === "scan" && (
+            <div className="space-y-3">
+              <div className="rounded-2xl bg-white p-4 shadow-sm">
+                <div className="mb-1 text-sm font-semibold text-slate-800">Magazzino — prendi o riporta materiale</div>
+                <p className="mb-4 text-xs text-slate-500">Inquadra l'etichetta QR sull'articolo o sullo scaffale: tre tocchi e hai finito.</p>
+                <ScannerQR />
+              </div>
             </div>
           )}
 
@@ -245,7 +257,7 @@ export default function PortaleDipendente() {
         </main>
 
         {/* bottom nav stile app */}
-        <nav className="sticky bottom-0 grid grid-cols-5 border-t border-slate-200 bg-white">
+        <nav className="sticky bottom-0 grid grid-cols-6 border-t border-slate-200 bg-white">
           {tabs.map((t) => (
             <button key={t.id} onClick={() => setTab(t.id)}
               className={`flex flex-col items-center gap-1 py-2.5 text-[11px] font-medium ${

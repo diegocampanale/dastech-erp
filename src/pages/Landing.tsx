@@ -46,7 +46,7 @@ export default function Landing() {
             <a href="#referenze" className="hover:text-petrol-600">Referenze</a>
             <a href="#contatti" className="hover:text-petrol-600">Contatti</a>
           </nav>
-          <Link to="/app" className="flex items-center gap-1.5 rounded-lg bg-petrol-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-petrol-700">
+          <Link to="/login" className="flex items-center gap-1.5 rounded-lg bg-petrol-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-petrol-700">
             <LayoutDashboard size={16} /> Area gestionale
           </Link>
         </div>

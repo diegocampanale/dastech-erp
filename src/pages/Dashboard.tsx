@@ -1,4 +1,5 @@
-import { FolderKanban, HardHat, CalendarClock, Euro } from "lucide-react";
+import { Link } from "react-router-dom";
+import { FolderKanban, HardHat, CalendarClock, Euro, AlertTriangle, Receipt, ArrowRight } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
 import { commesse, dipendenti, scadenze, euro, totaleCommessa } from "../mock/data";
 import { Card, PageTitle } from "../components/ui";
@@ -35,6 +36,30 @@ export default function Dashboard() {
             </div>
           </Card>
         ))}
+      </div>
+
+      {/* alert operativi */}
+      <div className="mt-4 grid grid-cols-1 gap-3 lg:grid-cols-2">
+        <div className="flex items-start gap-3 rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <AlertTriangle size={18} className="mt-0.5 shrink-0 text-amber-600" />
+          <div className="text-sm">
+            <span className="font-semibold text-amber-800">Materiale mancante prima della partenza:</span>{" "}
+            <span className="text-amber-700">domani a Casamassima servono 6 terminali MT per cavo 185 mmq — giacenza zero.</span>{" "}
+            <Link to="/app/richieste" className="inline-flex items-center gap-0.5 font-medium text-amber-800 underline">
+              Vai alla richiesta <ArrowRight size={12} />
+            </Link>
+          </div>
+        </div>
+        <div className="flex items-start gap-3 rounded-xl border border-petrol-200 bg-petrol-50 p-4">
+          <Receipt size={18} className="mt-0.5 shrink-0 text-petrol-600" />
+          <div className="text-sm">
+            <span className="font-semibold text-petrol-800">2 fatture da confermare</span>{" "}
+            <span className="text-petrol-700">in coda: il sistema ha già proposto la commessa di destinazione.</span>{" "}
+            <Link to="/app/fatture" className="inline-flex items-center gap-0.5 font-medium text-petrol-800 underline">
+              Apri coda fatture <ArrowRight size={12} />
+            </Link>
+          </div>
+        </div>
       </div>
 
       <Card className="mt-6 p-5">
