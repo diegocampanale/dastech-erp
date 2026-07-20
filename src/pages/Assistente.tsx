@@ -8,7 +8,7 @@ const risposte: Record<string, string> = {
   "Quanto abbiamo speso finora sul capannone di Modugno?":
     "Sulla commessa \"Impianto elettrico capannone Modugno\" il consuntivo a oggi è di 104.400 € (56% del budget di 185.000 €): 48.200 € di manodopera, 39.500 € di materiali, 6.200 € di mezzi, 8.400 € di noleggi e 2.100 € di trasferte. L'avanzamento lavori è al 62%, quindi il margine è in linea.",
   "Chi è in cantiere oggi e dove?":
-    "Oggi risultano assegnate 6 persone: Stefano Campanale e Daniele Campanale a Modugno, Gianni Campanale a Bitonto, Nicola (interinale Randstad) a Molfetta, Antonio Campanale a Giovinazzo e Giacomo Campanale a Casamassima. Angela Fiore è in sede.",
+    "Oggi risultano assegnate 6 persone: Stefano Campanale e Daniele Campanale a Modugno, Gianni Campanale a Bitonto, Nicola Frisina (interinale Randstad) a Molfetta, Antonio Campanale a Giovinazzo e Giacomo Campanale a Casamassima. Angela Fiore è in sede.",
   "Ci sono documenti in scadenza questa settimana?":
     "Sì, 2 criticità: la visita medica di Daniele Campanale è scaduta il 10/07 e la verifica gru dell'Iveco Daily è scaduta il 30/06. Inoltre il corso PES/PAV/PEI di Stefano Campanale scade il 25/07: consiglio di prenotare il rinnovo entro oggi.",
   "Quanti pannelli fotovoltaici restano a Molfetta?":

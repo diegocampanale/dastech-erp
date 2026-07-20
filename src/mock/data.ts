@@ -16,7 +16,7 @@ export const dipendenti: Dipendente[] = [
   { id: "D01", nome: "Stefano Campanale", ruolo: "Capo cantiere", tipo: "Dipendente", telefono: "340 112 2334", commessaId: "C01", oreMese: 168, costoOrario: 28 },
   { id: "D02", nome: "Daniele Campanale", ruolo: "Elettricista specializzato", tipo: "Dipendente", telefono: "347 998 1120", commessaId: "C01", oreMese: 160, costoOrario: 24 },
   { id: "D03", nome: "Gianni Campanale", ruolo: "Elettricista", tipo: "Dipendente", telefono: "329 445 6671", commessaId: "C02", oreMese: 152, costoOrario: 21 },
-  { id: "D06", nome: "Nicola", ruolo: "Aiuto elettricista", tipo: "Interinale", agenzia: "Randstad", telefono: "338 761 0092", commessaId: "C03", oreMese: 136, costoOrario: 19 },
+  { id: "D06", nome: "Nicola Frisina", ruolo: "Aiuto elettricista", tipo: "Interinale", agenzia: "Randstad", telefono: "338 761 0092", commessaId: "C03", oreMese: 136, costoOrario: 19 },
   { id: "D07", nome: "Antonio Campanale", ruolo: "Capo squadra", tipo: "Dipendente", telefono: "345 003 8821", commessaId: "C04", oreMese: 168, costoOrario: 26 },
   { id: "D08", nome: "Giacomo Campanale", ruolo: "Elettricista", tipo: "Dipendente", telefono: "342 887 4410", commessaId: "C05", oreMese: 120, costoOrario: 21 },
 ];
@@ -154,7 +154,7 @@ export const scadenze: Scadenza[] = [
   { id: "S01", soggetto: "Stefano Campanale", tipoSoggetto: "Persona", documento: "Corso PES/PAV/PEI", scadenza: "2026-07-25", stato: "in scadenza" },
   { id: "S02", soggetto: "Daniele Campanale", tipoSoggetto: "Persona", documento: "Visita medica idoneità", scadenza: "2026-07-10", stato: "scaduto" },
   { id: "S03", soggetto: "Gianni Campanale", tipoSoggetto: "Persona", documento: "Corso lavori in quota", scadenza: "2026-09-18", stato: "ok" },
-  { id: "S04", soggetto: "Nicola", tipoSoggetto: "Persona", documento: "Formazione base sicurezza", scadenza: "2026-08-02", stato: "in scadenza" },
+  { id: "S04", soggetto: "Nicola Frisina", tipoSoggetto: "Persona", documento: "Formazione base sicurezza", scadenza: "2026-08-02", stato: "in scadenza" },
   { id: "S05", soggetto: "Antonio Campanale", tipoSoggetto: "Persona", documento: "Patentino PLE", scadenza: "2027-01-12", stato: "ok" },
   { id: "S06", soggetto: "Fiat Ducato — GF 342 KL", tipoSoggetto: "Mezzo", documento: "Revisione", scadenza: "2026-08-05", stato: "in scadenza" },
   { id: "S07", soggetto: "Iveco Daily — FT 889 CV", tipoSoggetto: "Mezzo", documento: "Verifica gru (D.Lgs 81)", scadenza: "2026-06-30", stato: "scaduto" },
@@ -174,7 +174,7 @@ export type Trasferta = {
 
 export const trasferte: Trasferta[] = [
   { id: "T01", dipendente: "Antonio Campanale", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 620 },
-  { id: "T02", dipendente: "Nicola", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 540 },
+  { id: "T02", dipendente: "Nicola Frisina", commessaId: "C03", destinazione: "Molfetta (BA)", dal: "2026-07-06", al: "2026-07-10", costo: 540 },
   { id: "T03", dipendente: "Stefano Campanale", commessaId: "C01", destinazione: "Modugno (BA)", dal: "2026-06-22", al: "2026-06-26", costo: 480 },
   { id: "T04", dipendente: "Giacomo Campanale", commessaId: "C05", destinazione: "Casamassima (BA)", dal: "2026-07-13", al: "2026-07-15", costo: 310 },
 ];

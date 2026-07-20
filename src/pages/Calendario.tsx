@@ -21,7 +21,7 @@ const agenda: { nome: string; tipo: "Persona" | "Mezzo"; slot: Slot[] }[] = [
   { nome: "Gianni Campanale", tipo: "Persona", slot: ["C02", "C02", "C02", "C04", "C04", null] },
   { nome: "Antonio Campanale", tipo: "Persona", slot: ["C04", "C03", "C03", "C03", "C04", "C04"] },
   { nome: "Giacomo Campanale", tipo: "Persona", slot: ["C05", "C05", "C05", "C05", "C05", null] },
-  { nome: "Nicola", tipo: "Persona", slot: ["C03", "C03", "C03", "ferie", "C03", null] },
+  { nome: "Nicola Frisina", tipo: "Persona", slot: ["C03", "C03", "C03", "ferie", "C03", null] },
   { nome: "Fiat Ducato — GF 342 KL", tipo: "Mezzo", slot: ["C01", "C01", "C01", "C01", "C01", null] },
   { nome: "Iveco Daily — FT 889 CV", tipo: "Mezzo", slot: ["C03", "C03", null, "C03", "C03", null] },
   { nome: "PLE 18 m — FC 456 TT", tipo: "Mezzo", slot: [null, null, null, "C04", "C04", "C04"] },
@@ -119,7 +119,7 @@ export default function Calendario() {
           )}
           <div className="mt-4 flex items-start gap-2 rounded-lg bg-amber-50 p-3 text-xs text-amber-700">
             <CalendarDays size={14} className="mt-0.5 shrink-0" />
-            Daniele Campanale in ferie mer–gio · Nicola in ferie giovedì. Clicca un giorno in intestazione per aggiornare il pannello.
+            Daniele Campanale in ferie mer–gio · Nicola Frisina in ferie giovedì. Clicca un giorno in intestazione per aggiornare il pannello.
           </div>
         </Card>
       </div>
